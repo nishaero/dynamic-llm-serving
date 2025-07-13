@@ -23,8 +23,5 @@ WORKDIR /app
 # Expose FastAPI port
 EXPOSE 8080
 
-# Supervisor config for FastAPI (optional, can run directly if desired)
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
 # Default command: run FastAPI via uvicorn
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
