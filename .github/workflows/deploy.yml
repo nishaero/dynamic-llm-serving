@@ -35,7 +35,7 @@ jobs:
       - name: Run semantic-release (create tag, changelog, and release)
         id: semantic
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHCR_TOKEN }}
         run: |
           npx semantic-release
 
