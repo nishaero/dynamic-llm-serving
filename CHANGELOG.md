@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.0...v1.0.1) (2025-07-13)
+
+### Bug Fixes
+
+* update github tocken var name ([336238e](https://github.com/nishaero/dynamic-llm-serving/commit/336238e873167384977666b613ef4f7a44107c0f))
+
 ## 1.0.0 (2025-07-13)
 
 ### Features
