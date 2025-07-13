@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.3...v1.0.4) (2025-07-13)
+
+### Bug Fixes
+
+* changing the path of registry url ([53da459](https://github.com/nishaero/dynamic-llm-serving/commit/53da45948f32693d8827289aa65db1fa40ae19fc))
+
 ## [1.0.3](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.2...v1.0.3) (2025-07-13)
 
 ### Bug Fixes
