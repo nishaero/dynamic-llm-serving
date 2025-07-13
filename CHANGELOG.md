@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.2...v1.0.3) (2025-07-13)
+
+### Bug Fixes
+
+* set application to non-root ([33c93b2](https://github.com/nishaero/dynamic-llm-serving/commit/33c93b2ba0b86c8446d4b9b94cec3b814caed14a))
+
 ## [1.0.2](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.1...v1.0.2) (2025-07-13)
 
 ### Bug Fixes
