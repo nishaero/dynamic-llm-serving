@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.6...v1.0.7) (2025-07-15)
+
+### Bug Fixes
+
+* login to hugging face ([e05459a](https://github.com/nishaero/dynamic-llm-serving/commit/e05459af65a7c0e3bf5bb4a3f9248f033ba85bb1))
+
 ## [1.0.6](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.5...v1.0.6) (2025-07-15)
 
 ### Bug Fixes
