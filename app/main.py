@@ -17,6 +17,16 @@ model = None
 tokenizer = None
 MODEL_INFO = None
 
+SECRET_KEY = os.getenv("JWT_SECRET", "changeme")
+ALGORITHM = "HS256"
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+def verify_token(token: str):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return payload.get("sub")
+    except JWTError:
+        return None
 
 def load_model_from_info(model_info):
     global model, tokenizer, MODEL_INFO
@@ -51,7 +61,9 @@ async def generate(data: dict):
     return JSONResponse({"response": response})
 
 @app.post("/set-model")
-async def set_model(data: dict, request: Request):
+async def set_model(data: dict, request: Request, token: str = Depends(oauth2_scheme)):
+    if not verify_token(token):
+        raise HTTPException(status_code=401, detail="Unauthorized")
     new_model_id = data.get("model_id")
     if not new_model_id:
         raise HTTPException(status_code=400, detail="Missing model_id")
@@ -64,6 +76,10 @@ async def set_model(data: dict, request: Request):
 @app.get("/model-info")
 async def model_info():
     return JSONResponse(MODEL_INFO)
+
+@app.get("/healthz")
+async def healthz():
+    return JSONResponse({"status": "ok", "model_loaded": model is not None})
 
 @app.get("/")
 async def chat_page():

@@ -25,11 +25,38 @@ This example demonstrates a production-grade FastAPI app that dynamically loads 
 }
 ```
 
-## Next Steps
+## Security
 
-- Add JWT authentication to `/set-model`
-- Add Prometheus `/metrics` endpoint
-- Automate registry updates via GitHub Actions or API
+- Model switching is protected using JWT.
+- Set your `JWT_SECRET` as an env var.
+
+## Observability
+
+- `/metrics` endpoint exposes Prometheus metrics:
+    - Inference latency
+    - Model switch count
+- `/healthz` endpoint for health checks.
+
+## Architecture Diagram
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant FastAPI
+    participant GitHub Registry
+    User->>FastAPI: /generate (prompt)
+    FastAPI->>Model: run inference
+    FastAPI-->>User: response
+
+    User->>FastAPI: /set-model (JWT, model_id)
+    FastAPI->>GitHub Registry: fetch model-info.json
+    FastAPI->>Model: load new model
+    FastAPI-->>User: status
+
+    User->>FastAPI: /metrics
+    FastAPI-->>User: Prometheus metrics
+```
+
 
 ## Credits
 

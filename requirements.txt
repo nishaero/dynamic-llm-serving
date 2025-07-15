@@ -11,3 +11,5 @@ pydantic
 langchain
 pillow
 openai
+python-jose
+python-multipart
