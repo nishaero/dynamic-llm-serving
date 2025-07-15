@@ -23,11 +23,11 @@ def load_model(model_id):
     print(f"Loading model: {model_id}")
     tokenizer = AutoTokenizer.from_pretrained(
         model_id,
-        use_auth_token=True
+        token=True
     )
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        use_auth_token=True
+        token=True
     )
 
 load_model(MODEL)
