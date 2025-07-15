@@ -6,3 +6,4 @@ protobuf
 huggingface_hub
 torch
 sentencepiece
+accelerate
