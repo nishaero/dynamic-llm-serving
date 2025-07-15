@@ -28,11 +28,10 @@ def load_model_from_info(model_info):
     )
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        token=HF_TOKEN
+        token=HF_TOKEN,
+        device_map="auto"
     )
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = model.to(device)
-    print(f"Model loaded on device: {device}")
+    print(f"Model loaded on device: {model.device if hasattr(model, 'device') else 'auto/device_map'})")
     MODEL_INFO = model_info
 
 # Initial load
@@ -44,7 +43,7 @@ async def generate(data: dict):
     prompt = data.get("prompt")
     if not prompt:
         raise HTTPException(status_code=400, detail="Missing prompt")
-    device = model.device if hasattr(model, "device") else torch.device("cpu")
+    device = model.device if hasattr(model, "device") else torch.device("cuda" if torch.cuda.is_available() else "cpu")
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(device) for k, v in inputs.items()}
     outputs = model.generate(**inputs, max_new_tokens=128)
