@@ -1,7 +1,7 @@
 import requests
 import json
 
-REGISTRY_URL = "https://raw.githubusercontent.com/nishaero/dynamic-llm-serving/models/model-info.json"
+REGISTRY_URL = "https://raw.githubusercontent.com/nishaero/dynamic-llm-serving/refs/heads/main/models/model-info.json"
 
 def fetch_model_info():
     resp = requests.get(REGISTRY_URL)
