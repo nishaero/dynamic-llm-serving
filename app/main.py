@@ -1,8 +1,9 @@
 import os
+from huggingface_hub import login
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 import uvicorn
-import transformers
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from app.registry import get_current_model, switch_model
 
 app = FastAPI()
@@ -10,6 +11,8 @@ MODEL, MODEL_INFO = get_current_model()
 
 # Hugging Face token from environment
 HF_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+if HF_TOKEN:
+    login(token=HF_TOKEN)
 
 model = None
 tokenizer = None
@@ -17,13 +20,13 @@ tokenizer = None
 def load_model(model_id):
     global model, tokenizer
     print(f"Loading model: {model_id}")
-    tokenizer = transformers.AutoTokenizer.from_pretrained(
+    tokenizer = AutoTokenizer.from_pretrained(
         model_id,
-        use_auth_token=HF_TOKEN if HF_TOKEN else None
+        use_auth_token=True
     )
-    model = transformers.AutoModelForCausalLM.from_pretrained(
+    model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        use_auth_token=HF_TOKEN if HF_TOKEN else None
+        use_auth_token=True
     )
 
 load_model(MODEL)
