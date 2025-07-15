@@ -1,3 +1,9 @@
+## [1.0.15](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.14...v1.0.15) (2025-07-15)
+
+### Bug Fixes
+
+* update model to llama 3 8b ([ec395c1](https://github.com/nishaero/dynamic-llm-serving/commit/ec395c11273084144260e61db4fe1239636b7204))
+
 ## [1.0.14](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.13...v1.0.14) (2025-07-15)
 
 ### Bug Fixes
