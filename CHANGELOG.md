@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.8...v1.0.9) (2025-07-15)
+
+### Bug Fixes
+
+* add missing packages ([f8cb7c2](https://github.com/nishaero/dynamic-llm-serving/commit/f8cb7c26ad174a2266c1c377f798272c8266b5c1))
+
 ## [1.0.8](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.7...v1.0.8) (2025-07-15)
 
 ### Bug Fixes
