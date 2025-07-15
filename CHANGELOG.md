@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.9...v1.0.10) (2025-07-15)
+
+### Bug Fixes
+
+* add simple chat window ([1d2acc7](https://github.com/nishaero/dynamic-llm-serving/commit/1d2acc781343d6151210dafe8599cd1a3d4fa14f))
+* use gpis ([f314402](https://github.com/nishaero/dynamic-llm-serving/commit/f314402a4f41b0dec8e2d63e71edd6a3567c9bc6))
+
 ## [1.0.9](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.8...v1.0.9) (2025-07-15)
 
 ### Bug Fixes
