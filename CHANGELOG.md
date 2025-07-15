@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.4...v1.0.5) (2025-07-15)
+
+### Bug Fixes
+
+* update model registry url ([b96b019](https://github.com/nishaero/dynamic-llm-serving/commit/b96b01945ce199d0a2980b384db2227e7cc3afd3))
+
 ## [1.0.4](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.3...v1.0.4) (2025-07-13)
 
 ### Bug Fixes
