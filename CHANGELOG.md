@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.11...v1.0.12) (2025-07-15)
+
+### Bug Fixes
+
+* change model ([d588bf8](https://github.com/nishaero/dynamic-llm-serving/commit/d588bf8b5e26b6634bc6ff459eb163cf7ab96528))
+
 ## [1.0.11](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.10...v1.0.11) (2025-07-15)
 
 ### Bug Fixes
