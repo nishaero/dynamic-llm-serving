@@ -1,3 +1,9 @@
+## [1.0.13](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.12...v1.0.13) (2025-07-15)
+
+### Bug Fixes
+
+* force use gpu ([705ae06](https://github.com/nishaero/dynamic-llm-serving/commit/705ae0684e563189cbe6495c1327212e70279dc6))
+
 ## [1.0.12](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.11...v1.0.12) (2025-07-15)
 
 ### Bug Fixes
