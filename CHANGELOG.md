@@ -1,3 +1,9 @@
+## [1.0.16](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.15...v1.0.16) (2025-07-15)
+
+### Bug Fixes
+
+* add helth metrics and jwt for model switch ([512a982](https://github.com/nishaero/dynamic-llm-serving/commit/512a982b0d26936ba3a0214c1169b724e3f4360d))
+
 ## [1.0.15](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.14...v1.0.15) (2025-07-15)
 
 ### Bug Fixes
