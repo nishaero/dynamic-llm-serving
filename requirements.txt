@@ -2,3 +2,6 @@ fastapi
 uvicorn
 transformers
 requests
+protobuf
+huggingface_hub
+torch

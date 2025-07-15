@@ -1,8 +1,9 @@
 import os
 from huggingface_hub import login
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
 import uvicorn
+import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from app.registry import get_current_model, switch_model
 
