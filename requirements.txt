@@ -13,3 +13,4 @@ pillow
 openai
 python-jose
 python-multipart
+prometheus_client
