@@ -1,5 +1,5 @@
 {
-  "model_id": "meta-llama/Meta-Llama-3-8B",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
   "source": "huggingface",
   "version": "v1.0.0",
   "description": "Default instruct model for demo",
