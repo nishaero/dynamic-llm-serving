@@ -1,3 +1,9 @@
+## [1.0.17](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.16...v1.0.17) (2025-07-18)
+
+### Bug Fixes
+
+* add jupyter notebook and metrics server ([7b277ae](https://github.com/nishaero/dynamic-llm-serving/commit/7b277aebfd1e0cc8bd1578ca61fdf46fdaae4ed1))
+
 ## [1.0.16](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.15...v1.0.16) (2025-07-15)
 
 ### Bug Fixes
