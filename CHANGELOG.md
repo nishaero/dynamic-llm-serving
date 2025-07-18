@@ -1,3 +1,9 @@
+## [1.0.18](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.17...v1.0.18) (2025-07-18)
+
+### Bug Fixes
+
+* load model on cuda ([535dc0c](https://github.com/nishaero/dynamic-llm-serving/commit/535dc0cb786bef170fdba30fe6b92b9c04556cfc))
+
 ## [1.0.17](https://github.com/nishaero/dynamic-llm-serving/compare/v1.0.16...v1.0.17) (2025-07-18)
 
 ### Bug Fixes
